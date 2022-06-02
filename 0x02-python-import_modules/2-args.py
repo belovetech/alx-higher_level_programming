@@ -13,5 +13,5 @@ if __name__ == "__main__":
     else:
         print("{} arguements:".format(argcount))
 
-    for i in range(1, argcount + 1):
-        print("{}: {}".format(i, sys.argv[i]))
+    for i in range(argcount):
+        print("{}: {}".format(i + 1, sys.argv[i + 1]))

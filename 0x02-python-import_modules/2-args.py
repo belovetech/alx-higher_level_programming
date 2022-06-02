@@ -4,14 +4,14 @@ if __name__ == "__main__":
     """Print the number and list of arguements."""
     import sys
 
-    argc = len(sys.argv) - 1
+    argcount = len(sys.argv) - 1
 
-    if argc == 0:
+    if argcount == 0:
         print("0 arguements.")
-    elif argc == 1:
+    elif argcount == 1:
         print("1 arguement:")
     else:
-        print("{} arguements:".format(argc))
+        print("{} arguements:".format(argcount))
 
-    for i in range(1, argc + 1):
+    for i in range(1, argcount + 1):
         print("{}: {}".format(i, sys.argv[i]))

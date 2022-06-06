@@ -6,3 +6,6 @@ idx = 3
 new_list = delete_at(my_list, idx)
 print(new_list)
 print(my_list)
+
+for i in range(1, 11, 2):
+    print(i)

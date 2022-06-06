@@ -14,7 +14,7 @@ int is_palindrome(listint_t **head)
 	unsigned int len = 0, i = 0, flag = 1, lastidx, *buf;
 
 	current = *head;
-	if (head == NULL)
+	if (*head == NULL || *(head)->next == NULL)
 		return (1);
 
 	while (current != NULL)
@@ -25,7 +25,7 @@ int is_palindrome(listint_t **head)
 
 	buf = malloc(sizeof(int) * len);
 	if (buf == NULL)
-		return (-1);
+		return (1);
 
 	current = *head;
 	while (current != NULL)

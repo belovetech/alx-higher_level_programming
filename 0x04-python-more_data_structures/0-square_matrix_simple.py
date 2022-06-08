@@ -8,6 +8,6 @@ def square_matrix_simple(matrix=[]):
     """Square of matrix"""
     square_matrix = []
     for row in matrix:
-        col = map(square, row)
-        square_matrix.append(list(col))
+        square_list = map(square, row)
+        square_matrix.append(list(square_list))
     return square_matrix

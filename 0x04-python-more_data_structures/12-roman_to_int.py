@@ -12,15 +12,15 @@ def roman_to_int(roman_string):
         'D': 500,
         'M': 1000
     }
-    roman_len = len(roman_string)
+
     if (not isinstance(roman_string, str) or roman_string is None):
         return 0
 
-    for x in range(roman_len):
+    for x in range(len(roman_string)):
         if roman_num.get(roman_string[x], 0) == 0:
             return 0
 
-        if (x != (roman_len - 1) and
+        if (x != (len(roman_string) - 1) and
                 roman_num[roman_string[x]] < roman_num[roman_string[x + 1]]):
             sum_num += roman_num[roman_string[x]] * -1
         else:

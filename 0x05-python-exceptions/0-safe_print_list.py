@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 def safe_print_list(my_list=[], x=0):
     """prints x elements of a list"""
     try:
@@ -11,8 +10,8 @@ def safe_print_list(my_list=[], x=0):
             print(x, end="")
         print()
 
-    except:
-        print("Error")
+    except SyntaxError as err:
+        print("Synatx error")
 
     else:
         return length

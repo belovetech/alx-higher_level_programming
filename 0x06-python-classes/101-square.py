@@ -64,7 +64,7 @@ class Square:
             print("")
 
     def __str__(self):
-        """Printing of the square"""
+        """Defines the Printing of a square"""
 
         if self.__size != 0:
             for i in range(self.__position[1]):
@@ -75,7 +75,6 @@ class Square:
                 print(" ", end="")
             for z in range(self.__size):
                 print("#", end="")
-            print("")
             if x != self.__size - 1:
                 print("")
         return ""

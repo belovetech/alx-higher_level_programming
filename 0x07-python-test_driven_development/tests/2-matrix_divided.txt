@@ -1,0 +1,85 @@
+The matrix_divided module
+==========================
+"""
+    The following are tests for 2-matrix_divided.py
+"""
+
+----------------------------------------
+import module
+----------------------------------------
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+----------------------------------------
+check positive and negative and positive list with non-zero divisor
+----------------------------------------
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+>>> matrix_divided([[-1, -2, -3], [-4, -5, -6]], 3)
+[[-0.33, -0.67, -1.0], [-1.33, -1.67, -2.0]]
+
+----------------------------------------
+check  positive and negative float lists and divisor
+----------------------------------------
+>>> matrix_divided([[1, 2.3, 3], [4, 5.2, 6.7]], 3)
+[[0.33, 0.77, 1.0], [1.33, 1.73, 2.23]]
+
+>>> matrix_divided([[-1, -2.3, -3], [-4, -5.2, -6.7]], 3)
+[[-0.33, -0.77, -1.0], [-1.33, -1.73, -2.23]]
+
+----------------------------------------
+check for divisor
+----------------------------------------
+>>> matrix_divided([[1, 2.3, 3], [4, 5.2, 6.7]], -3)
+[[-0.33, -0.77, -1.0], [-1.33, -1.73, -2.23]]
+
+>>> matrix_divided([[1, 2.3, 3], [4, 5.2, 6.7]], 3.2)
+[[0.31, 0.72, 0.94], [1.25, 1.62, 2.09]]
+
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
+
+-----------------------------------------
+check lists and non integer divisor
+------------------------------------------
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], "a")
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+-----------------------------------------
+check lists and None divisor
+------------------------------------------
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], None)
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+
+----------------------------------------
+check wrong inputs
+-----------------------------------------
+check string and divisor
+------------------------------------------
+>>> matrix_divided("a", 3)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+-------------------------------------------
+check list contains string and divisor
+-------------------------------------------
+>>> matrix_divided([[1, "a", 3], [4, "str", 6]], 3)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+-------------------------------------------
+check list contains string and string
+-------------------------------------------
+>>> matrix_divided([[1, "a", 3], "a"], 3)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats

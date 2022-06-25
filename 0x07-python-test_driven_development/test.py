@@ -1,13 +1,6 @@
-# x = 10.30
-# y = 5.00
 
-# x = int(x)
-# y = int(y)
+matrix = [[1, 2.3, 3], [4, 5.2, 6.7]]
+# new_list = []
 
-# print(x + y)
-
-pos_ifnity = float('inf')
-neg_ifnity = float('-inf')
-
-print("Positive", pos_ifnity)
-print("Negative", neg_ifnity)
+x = ([list(map(lambda x: round(x / 3.2, 2), num))for num in matrix])
+print(x)

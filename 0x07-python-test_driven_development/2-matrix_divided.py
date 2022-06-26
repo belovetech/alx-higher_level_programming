@@ -9,8 +9,8 @@ def matrix_divided(matrix, div):
         Args:
             matrix (list): matrix of int/float lists
             div (int): divisor for matrix item
-        Return:
-            returns new list with result
+        Returns:
+            A new list with result
     """
     if not isinstance(div, (int, float)) or div is None:
         raise TypeError("div must be a number")

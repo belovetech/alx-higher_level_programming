@@ -57,7 +57,7 @@ class Rectangle:
             return (2 * (self.__width + self.__height))
 
     def __str__(self):
-        """ printable representation of the rectangle class.
+        """ Returns a printable representation of the rectangle class.
 
             print the rectangle with the character #
         """
@@ -72,3 +72,14 @@ class Rectangle:
             if x != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
+
+    def __repr__(self):
+        """Return a string representation of the rectangle"""
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return rect
+    # def __repr__(self):
+    #     """Return a string representation of the rectangle"""
+    #     rect = "Rectangle(" + str(self.__width)
+    #     rect += ", " + str(self.__height) + ")"
+    #     return (rect)

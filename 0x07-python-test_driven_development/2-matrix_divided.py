@@ -16,15 +16,25 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
+
     if not isinstance(matrix, list):
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats")
 
+    len_of_first_row = len(matrix[0])
     for row in matrix:
+        if not isinstance(row, list):
+            raise TypeError(
+                "matrix must be a matrix (list of lists) of integers/floats")
+
+        if len(row) != len_of_first_row:
+            raise TypeError("Each row of the matrix must have the same size")
+
         for item in row:
             if not isinstance(item, (int, float)):
                 raise TypeError(
                     "matrix must be a matrix (list of lists) of integers/floats")
+
         # new_list = []
         # res = list(map(lambda item: round(item / div, 2), row))
         # new_list.append(res)

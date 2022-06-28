@@ -33,4 +33,6 @@ OK. But what about this?
 | 0-answer.txt | What function would you use to print the type of an object?                                         |
 | 1-answer.txt | How do you get the variable identifier (which is the memory address in the CPython implementation)? |
 
-|
+## PS
+
+This is a project done during Full Stack Software Engineering studies at ALX_AFRICA. The objectives of the project is teach ALX-SE students about the difference between a class and an object or instance, the difference between immutable object and mutable object, reference and assignment

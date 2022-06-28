@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Representation of a locked class 
+Representation of a locked class
 """
 
 

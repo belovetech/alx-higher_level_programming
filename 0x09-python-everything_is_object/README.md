@@ -26,13 +26,16 @@ OK. But what about this?
 >>>
 ```
 
-## Files
+## Files in the Directory
 
-|   Filename   | Description                                                                                         |
-| :----------: | --------------------------------------------------------------------------------------------------- |
-| 0-answer.txt | What function would you use to print the type of an object?                                         |
-| 1-answer.txt | How do you get the variable identifier (which is the memory address in the CPython implementation)? |
+All `.txt `files stores answer to questions relating to classes, objects, instances, mutable and immutable data types, references as well as assignments in Python
+
+|      Filename       | Description                                                                                                                                                                      |
+| :-----------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   19-copy_list.py   | Function that returns a copy of a list                                                                                                                                           |
+| 100-magic_string.py | Function that returns a string "BestSchool" n times the number of the iteration                                                                                                  |
+| 101-locked_class.py | Class LockedClass with no class or object attribute, that prevents the user from dynamically creating new instance attributes, except if the new instance is called `first_name` |
 
 ## PS
 
-This is a project done during Full Stack Software Engineering studies at ALX_AFRICA. The objectives of the project is teach ALX-SE students about the difference between a class and an object or instance, the difference between immutable object and mutable object, reference and assignment
+This is a project done during Full Stack Software Engineering studies at ALX_AFRICA. The objectives of the project is teach ALX-SE students about the difference between a class and an object or instance, the difference between immutable object and mutable object, as well as reference and assignment in Python

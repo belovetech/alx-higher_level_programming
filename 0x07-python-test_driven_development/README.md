@@ -17,7 +17,6 @@ Remember code that is not tested cannot be trusted
 | 3-say_my_name.py      | Function that prints My name is <first name> <last name> `(Doctest in tests/3-say_my_name.txt)`                               |
 | 4-print_square.py     | Function that prints a square with the character # `(Doctest in tests/4-print_sqaure.txt) `                                   |
 | 5-text_indentation.py | Function that prints a text with 2 new lines after each of these `.`, `?` and `:` `(Doctest in tests/5-text_indentation.txt)` |
-
 |tests/6-max_integer_test.py| Unittests for the function `def max_integer(list=[])`|
 
 ### PS

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
     Divides all elements of a matrix with a given divisor.
 """

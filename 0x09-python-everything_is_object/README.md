@@ -26,6 +26,8 @@ OK. But what about this?
 >>>
 ```
 
+![image.png](https://media.giphy.com/media/wAjfQ9MLUfFjq/giphy.gif))
+
 ## Files in the Directory
 
 All `.txt `files stores answer to questions relating to classes, objects, instances, mutable and immutable data types, references as well as assignments in Python

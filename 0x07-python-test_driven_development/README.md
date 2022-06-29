@@ -1,73 +1,25 @@
-# Python - Test-driven development
+# Test Driven Development
 
 ## **Concepts**
 
-For this project, we expect you to look at this concept:
-
-- [Never forget a test](https://alx-intranet.hbtn.io/concepts/47)
-
 ![Never forget a test](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/246/giphy-4.gif)
 
-## **Background Context**
+Testing is the process of evaluating a system or its components(s) with the intent to find out if it satisfies the specified requirements or not. The main purpose of testing is to identify any gaps, errors, or missing requirements contrary to the actual requirements.
 
-## **Important notice on intranet checks for Python projects**
+Remember code that is not tested cannot be trusted
 
-- Based on the requirements of each task, **you should always write the documentation (module(s) + function(s)) and tests first**, before you actually code anything
-- The intranet checks for Python projects won’t be released before their first deadline, in order for you to focus more on TDD and think about all possible cases
-- We strongly encourage you to work together on test cases, so that you don’t miss any edge case. But not in the implementation of them!
-- **Don’t trust the user**, always think about all possible edge cases
+## Files in the Directory
 
-## Resources
+| Filename              | Description                                                                                                                   |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 0-add_integer.py      | Function that adds two integers `(Doctest in tests/0-add_integer.txt)`                                                        |
+| 2-matrix_divided.py   | Function that divides all elemtns of a matrix `(Doctest in tests/2-matrix_divided.txt)`                                       |
+| 3-say_my_name.py      | Function that prints My name is <first name> <last name> `(Doctest in tests/3-say_my_name.txt)`                               |
+| 4-print_square.py     | Function that prints a square with the character # `(Doctest in tests/4-print_sqaure.txt) `                                   |
+| 5-text_indentation.py | Function that prints a text with 2 new lines after each of these `.`, `?` and `:` `(Doctest in tests/5-text_indentation.txt)` |
 
-### **Read or watch:**
+|tests/6-max_integer_test.py| Unittests for the function `def max_integer(list=[])`|
 
-- [doctest — Test interactive Python examples](https://alx-intranet.hbtn.io/rltoken/BwZJVq2MQ1_Vg_3gphoitQ)
-- [doctest – Testing through documentation](https://alx-intranet.hbtn.io/rltoken/96kLRRIOHzsn3VDDXT21HA)
-- [Unit Tests in Python](https://alx-intranet.hbtn.io/rltoken/wfuUl81Q3Nku1qCzdDHAfA)
+### PS
 
-## Learning Objectives
-
-At the end of this project, you are expected to be able to explain to anyone, **without the help of Google**:
-
-## General
-
-- Why Python programming is awesome
-- What’s an interactive test
-- Why tests are important
-- How to write Docstrings to create tests
-- How to write documentation for each module and function
-- What are the basic option flags to create tests
-- How to find edge cases
-
-## Copyright - Plagiarism
-
-- You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
-- You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
-- You are not allowed to publish any content of this project.
-- Any form of plagiarism is strictly forbidden and will result in removal from the program.
-
-## Requirements
-
-### Python Scripts
-
-- Allowed editors: vi, vim, emacs
-- All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
-- All your files should end with a new line
-- The first line of all your files should be exactly `#!/usr/bin/python3`
-- A README.md file, at the root of the folder of the project, is mandatory
-- Your code should use the pycodestyle (version 2.8.\*)
-- All your files must be executable
-- The length of your files will be tested using wc
-- Python Test Cases
-
-### Python Test Cases
-
-- Allowed editors: `vi, vim, emacs`
-- All your files should end with a new line
-- All your test files should be inside a folder tests
-- All your test files should be text files `(extension: .txt)`
-- All your tests should be executed by using this command: `python3 -m doctest ./tests/\*`
-- All your modules should have a documentation (`python3 -c 'print(import("my_module").doc)'`)
-- All your functions should have a documentation (`python3 -c 'print(import("my_module").my_function.doc)'`)
-- A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
-- We strongly encourage you to work together on test cases, so that you don’t miss any edge case – The Checker is checking for tests!
+This is a project done during Full Stack Software Engineering studies at ALX_AFRICA. The objectives of the project is to introduce the concept of docstrings and how to create and implement tests in Python.

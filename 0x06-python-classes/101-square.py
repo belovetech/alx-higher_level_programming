@@ -16,7 +16,21 @@ class Square:
 
     @property
     def size(self):
-        """Get/Set size of the square."""
+        """property getter: retrive the value of size.
+
+        Returns:
+            int: the set instance attribute.
+
+        size.setter: set the value of self.__size.
+        It also checks for TypeError and ValueError.
+
+        Args:
+            value (int): value to initialize self.__size with.
+
+        Raises:
+            TypeError: if value is not an integer.
+            ValueError: if value is lesser than 0.
+        """
         return self.__size
 
     @size.setter
@@ -30,7 +44,20 @@ class Square:
 
     @property
     def position(self):
-        """Get/Set position of the square."""
+        """property getter: retrive the value of position.
+
+        Returns:
+            int: the set instance attribute.
+
+        position.setter: set the value of self.__position.
+        It also checks for TypeError.
+
+        Args:
+            value (tuple): value to initialize self.__position with.
+
+        Raises:
+            TypeError: if value is not a tuple of 2 positive integers.
+        """
         return self.__position
 
     @position.setter
@@ -43,11 +70,15 @@ class Square:
         self.__position = value
 
     def area(self):
-        """Return area of the square."""
+        """calculates the area of the current square.
+
+        Returns:
+            int: the area of the square.
+        """
         return self.__size * self.__size
 
     def my_print(self):
-        """Prints the square with the character #"""
+        """Printsro stdout the square with the character #"""
 
         if self.__size == 0:
             print("")

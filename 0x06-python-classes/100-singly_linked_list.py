@@ -18,7 +18,20 @@ class Node:
 
     @property
     def data(self):
-        """Get/set data of the node."""
+        """property getter: retrive the value of data.
+
+        Returns:
+            int: the data instance attribute.
+
+        size.setter: set the value of self.__data.
+        It also checks for TypeError.
+
+        Args:
+            value (int): value to initialize self.__data with.
+
+        Raises:
+            TypeError: if value is not an integer.
+        """
         return self.__data
 
     @data.setter
@@ -29,7 +42,20 @@ class Node:
 
     @property
     def next_node(self):
-        """Get/set next_node of the node"""
+        """property getter: retrive the value of next_node.
+
+        Returns:
+            node: the next_node instance attribute.
+
+        size.setter: set the value of self.__next_node.
+        It also checks for TypeError.
+
+        Args:
+            value (node): value to initialize self.__next_node with.
+
+        Raises:
+            TypeError: if value is not a node object.
+        """
         return self.__next_node
 
     @next_node.setter

@@ -100,3 +100,83 @@ Traceback (most recent call last):
 ...
 NameError: name 'inf' is not defined
 
+----------------------------
+passing other data types
+-----------------------------
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", [3, 5, 7])
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", (3, 5, 7))
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", {3, 5, 7})
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", {"key": "value"})
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+----------------------------
+Passing more than two arguements
+-----------------------------
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 24, 25)
+Traceback (most recent call last):
+...
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+----------------------------
+Testing Area method on objects
+-----------------------------
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 23)
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 23)
+>>> bg.area(2)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 2 were given
+
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 23)
+>>> bg.area(2, 2)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 3 were given
+
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 23)
+>>> bg.area(2, 2)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 3 were given
+
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 23)
+>>> bg.area("str", 2)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 3 were given

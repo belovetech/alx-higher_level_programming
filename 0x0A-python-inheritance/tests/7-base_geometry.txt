@@ -83,13 +83,17 @@ Traceback (most recent call last):
 ...
 TypeError: 2 must be an integer
 
-
 ----------------------------
 passing None
 -----------------------------
 >>> bg = BaseGeometry()
 >>> bg.integer_validator(None, 1)
 
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", None)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
 
 ----------------------------
 infinity number
@@ -180,3 +184,10 @@ TypeError: area() takes 1 positional argument but 3 were given
 Traceback (most recent call last):
 ...
 TypeError: area() takes 1 positional argument but 3 were given
+
+
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented

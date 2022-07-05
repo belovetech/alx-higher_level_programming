@@ -31,7 +31,7 @@ class Student:
             attrs (list): attributes to retrieve
         """
         if type(attrs) is list:
-            if all(type(item) is str for item in attrs):
+            if all(type(item) == str for item in attrs):
                 return {key: getattr(self, key)
                         for key in attrs if hasattr(self, key)}
         return self.__dict__

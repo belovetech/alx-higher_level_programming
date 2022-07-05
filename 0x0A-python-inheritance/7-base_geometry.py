@@ -13,11 +13,14 @@ class BaseGeometry:
         """Validates integer value
 
         Args:
-            name (str): name
-            value (int): value passed
+            name (str): name of the value
+            value (int): the value passed
 
+         Raises:
+            TypeError: if value is not an integer
+            ValueError: if value is <= 0
         """
         if not isinstance(value, int):
-            raise TypeError("<name> must be an integer")
+            raise TypeError("{} must be an integer".format(name))
         elif value <= 0:
-            raise ValueError("<name> must be greater than 0")
+            raise ValueError("{} must be greater than 0".format(name))

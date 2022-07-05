@@ -24,8 +24,4 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """String representatin of area value"""
-        # return "[Rectangle] {:d}/{:d}"
-        # .format(self.__width, self.__height), end=""
-        print("[Rectangle] {:d}/{:d}"
-              .format(self.__width, self.__height), end="")
-        return ""
+        return ("[Rectangle] {:d}/{:d}".format(self.__width, self.__height))

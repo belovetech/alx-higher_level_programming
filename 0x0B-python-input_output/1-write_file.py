@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-"""
-Writes a string to a text file
-"""
 
-
-from xml.dom.minidom import CharacterData
+"""Writes a string to a text file"""
 
 
 def write_file(filename="", text=""):

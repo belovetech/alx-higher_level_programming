@@ -16,6 +16,4 @@ class Square(Rectangle):
     def __str__(self):
         """Defines the behaviour of the function when printed"""
 
-        print("[Square] {:d}/{:d}".format(self.__size, self.__size), end="")
-
-        return ""
+        return("[Square] {:d}/{:d}".format(self.__size, self.__size))

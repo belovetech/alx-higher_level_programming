@@ -7,16 +7,15 @@ The BaseGeometry module
 Import module
 -------------------------------
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
->>> bg = BaseGeometry()
 
 ----------------------------
 Test Cases
 -----------------------------
 common cases
 -----------------------------
+>>> bg = BaseGeometry()
 >>> bg.integer_validator("my_int", 12)
 
->>> bg.integer_validator("width", 89)
 
 >>> try:
 ...    bg.integer_validator("name", "John")
@@ -134,6 +133,12 @@ Traceback (most recent call last):
 ...
 TypeError: age must be an integer
 
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
 ----------------------------
 Passing more than two arguements
 -----------------------------
@@ -147,7 +152,6 @@ TypeError: integer_validator() takes 3 positional arguments but 4 were given
 Testing Area method on objects
 -----------------------------
 >>> bg = BaseGeometry()
->>> bg.integer_validator("age", 23)
 >>> bg.area()
 Traceback (most recent call last):
 ...
@@ -155,7 +159,6 @@ Exception: area() is not implemented
 
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("age", 23)
 >>> bg.area(2)
 Traceback (most recent call last):
 ...
@@ -163,7 +166,6 @@ TypeError: area() takes 1 positional argument but 2 were given
 
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("age", 23)
 >>> bg.area(2, 2)
 Traceback (most recent call last):
 ...
@@ -171,7 +173,6 @@ TypeError: area() takes 1 positional argument but 3 were given
 
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("age", 23)
 >>> bg.area(2, 2)
 Traceback (most recent call last):
 ...

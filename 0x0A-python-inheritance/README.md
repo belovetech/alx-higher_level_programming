@@ -12,7 +12,7 @@ class MySubClass(object):
 
 ```
 
-All `main.py` files contain testing code for each files. Also, tests directory contains test files for task number one and seven.
+All `main.py` files contain code that utilize the class object and function created. Also, tests directory contains test files for task number one and seven.
 
 ### Files in the directory
 
@@ -35,4 +35,4 @@ All `main.py` files contain testing code for each files. Also, tests directory c
 
 ### PS
 
-This is a project done during Full Stack Software Engineering studies at ALX_AFRICA. The objectives of the project is teach ALX-SE students about inheritance in Python, differences between `isinstance`, `issubclass`, `type` and `super` and how to use them.
+This is a project done during Full Stack Software Engineering studies at ALX_AFRICA. The objectives of the project is teach ALX-SE students about `inheritance` in Python, differences between `isinstance`, `issubclass`, `type` and `super` and how to use them.

@@ -30,7 +30,7 @@ class Student:
         Args:
             attrs (list): attributes to retrieve
         """
-        if type(attrs) is list:
+        if type(attrs) == list:
             if all(type(item) == str for item in attrs):
                 return {key: getattr(self, key)
                         for key in attrs if hasattr(self, key)}

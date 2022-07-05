@@ -47,6 +47,14 @@ NameError: name 'bg2' is not defined
 
 
 ----------------------------
+passing value to class
+-----------------------------
+>>> bg = BaseGeometry(value)
+Traceback (most recent call last):
+...
+NameError: name 'value' is not defined
+
+----------------------------
 testing float
 -----------------------------
 >>> bg = BaseGeometry()
@@ -138,6 +146,12 @@ TypeError: age must be an integer
 Traceback (most recent call last):
 ...
 TypeError: name must be an integer
+
+----------------------------
+Passing boolean value
+-----------------------------
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", True)
 
 ----------------------------
 Passing more than two arguements

@@ -17,8 +17,8 @@ class Rectangle(Base):
         Args:
             width  (int): width of the rectangle
             height (int): height of the rectangle
-            x (int): x of the rectangle
-            y (int): y of the rectangle
+            x (int): horizontal coordinate of the rectangle
+            y (int): vertical coordinates of the rectangle
         """
         self.width = width
         self.height = height

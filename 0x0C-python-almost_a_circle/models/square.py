@@ -17,25 +17,7 @@ class Square(Rectangle):
             id (int): id of the instances
         """
         super().__init__(size, size, x, y, id)
-
-    @property
-    def size(self):
-        """size property getter: retrives the size of the square
-
-        Returns:
-            size (int): the size instance attributes
-
-        size.setter: set the size of the square
-
-        Args:
-            value (int): inherit width and height from Rectangle as size
-        """
-        return self.width
-
-    @size.setter
-    def size(self, value):
-        self.width = value
-        self.height = value
+        self.size = self.width
 
     def __str__(self):
         """Represents square string to the stdout"""

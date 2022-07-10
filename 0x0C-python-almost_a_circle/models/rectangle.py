@@ -162,6 +162,14 @@ class Rectangle(Base):
 
         Args:
             *args (tuple): list of arguements
+            *kwargs (dict): key and values of attributes
+
+        *args is the list of arguments:
+            1st argument should be the id attribute
+            2nd argument should be the width attribute
+            3rd argument should be the height attribute
+            4th argument should be the x attribute
+            5th argument should be the y attribute
         """
 
         attrs = ["id", "width", "height", "x", "y"]

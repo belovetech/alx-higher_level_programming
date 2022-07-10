@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Representation of Rectangle class inherits from Base class"""
+from operator import attrgetter
 from models.base import Base
 
 
@@ -155,3 +156,19 @@ class Rectangle(Base):
         """Represents rectangle string to the stdout"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args):
+        """Update rectangle class instance attributes
+
+        Args:
+            *args (tuple): list of arguements
+        """
+
+        attrs = ["id", "width", "height", "x", "y"]
+        index = 0
+
+        if args is not None and len(args) > 0:
+            for arg in args:
+                if index != 5:
+                    setattr(self, attrs[index], arg)
+                    index += 1

@@ -42,3 +42,26 @@ class Square(Rectangle):
         """Represents square string to the stdout"""
         return "[Square] ({}) {}/{} - {}".format(
             self.id, self.x, self.y, self.size)
+
+    def update(self, *args, **kwargs):
+        """Update the value of square attributes
+
+        Args:
+            *args (tuple): List of attributes
+            *kwargs (dict): key and values of attributes
+
+        *args is the list of arguments:
+            1st argument should be the id attribute
+            2nd argument should be the size attribute
+            3rd argument should be the x attribute
+            4th argument should be the y attribute
+        """
+        attrs = ["id", "size", "x", "y"]
+        index = 0
+        if args is not None and len(args) > 0:
+            for arg in args:
+                setattr(self, attrs[index], arg)
+                index += 1
+        elif kwargs is not None:
+            for key, value in kwargs.items():
+                setattr(self, key, value)

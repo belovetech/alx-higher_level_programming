@@ -183,3 +183,13 @@ class Rectangle(Base):
         elif kwargs is not None:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Convert Rectangle instance to dictionary representation"""
+        return ({
+            "id": self.id,
+            "width": self.__width,
+            "height": self.__height,
+            "x": self.__x,
+            "y": self.__y
+        })

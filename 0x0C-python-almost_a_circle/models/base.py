@@ -21,6 +21,7 @@ class Base:
             type(self).__nb_objects += 1
             self.id = self.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """Converts dictionary to JSON string representation
 
@@ -51,3 +52,18 @@ class Base:
             else:
                 list_dict = [list.to_dictionary() for list in list_objs]
                 file.write(cls.to_json_string(list_dict))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Converts JSON string to dictionary representation
+
+        Args:
+            json_string (dict): JSON string representation
+
+        Returns:
+            JSON string representation of json_string
+        """
+        if json_string is None or json_string == []:
+            return "[]"
+        else:
+            return json.loads(json_string)

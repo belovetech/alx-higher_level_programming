@@ -28,7 +28,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """width property getter: retrieve the wdith of the class.
+        """width property getter: retrieve the width of the class.
 
         Returns:
             width (int): the width instance attribute

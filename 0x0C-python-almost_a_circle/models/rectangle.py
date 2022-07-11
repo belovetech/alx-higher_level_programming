@@ -193,3 +193,9 @@ class Rectangle(Base):
             "x": self.x,
             "y": self.y
         })
+    # def to_dictionary(self):
+    #     dict_list = ['x', 'y', 'id', 'height', 'width']
+    #     dictionary = {}
+    #     for i in dict_list:
+    #         dictionary[i] = getattr(self, i)
+    #     return dictionary

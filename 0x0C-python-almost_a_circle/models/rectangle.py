@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Representation of Rectangle class inherits from Base class"""
-from operator import attrgetter
+
 from models.base import Base
 
 
@@ -177,7 +177,7 @@ class Rectangle(Base):
 
         if args is not None and len(args) > 0:
             for arg in args:
-                if index != 5:
+                if index < 5:
                     setattr(self, attrs[index], arg)
                     index += 1
         elif kwargs is not None:

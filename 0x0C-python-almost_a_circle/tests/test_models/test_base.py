@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# test_base.py
+
 
 """Defines unittests for base.py.
 Unittest classes:
@@ -395,7 +395,7 @@ class TestBase_load_from_file(unittest.TestCase):
 
     def test_load_from_file_no_file(self):
         output = Square.load_from_file()
-        self.assertEqual('[]', output)
+        self.assertEqual([], output)
 
     def test_load_from_file_more_than_one_arg(self):
         with self.assertRaises(TypeError):
@@ -539,7 +539,7 @@ class TestBase_load_from_file_csv(unittest.TestCase):
 
     def test_load_from_file_csv_no_file(self):
         output = Square.load_from_file_csv()
-        self.assertEqual('[]', output)
+        self.assertEqual([], output)
 
     def test_load_from_file_csv_more_than_one_arg(self):
         with self.assertRaises(TypeError):

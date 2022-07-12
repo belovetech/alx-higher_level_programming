@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-# test_rectangle.py
+
 
 """Defines unittests for models/rectangle.py.
 Unittest classes:
-    TestRectangle_instantiation - line 24
-    TestRectangle_width - line 113
-    TestRectangle_height - line 185
+    TestRectangle_instantiation - line 25
+    TestRectangle_width - line 114
+    TestRectangle_height - line 190
     TestRectangle_x - line 262
     TestRectangle_y - line 334
     TestRectangle_order_of_initialization - line 402
@@ -14,10 +14,9 @@ Unittest classes:
     TestRectangle_update_kwargs - line 676
     TestRectangle_to_dictionary - line 788
 """
-
-import unittest
-import sys
 import io
+import sys
+import unittest
 from models.base import Base
 from models.rectangle import Rectangle
 
@@ -133,6 +132,10 @@ class TestRectangle_width(unittest.TestCase):
     def test_dict_width(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Rectangle({"a": 1, "b": 2}, 2)
+
+    def test_bool_width(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            Rectangle(True, 2)
 
     def test_list_width(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
@@ -277,6 +280,10 @@ class TestRectangle_x(unittest.TestCase):
     def test_dict_x(self):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             Rectangle(1, 2, {"a": 1, "b": 2}, 2)
+
+    def test_bool_x(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            Rectangle(1, 2, True, 2)
 
     def test_list_x(self):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):

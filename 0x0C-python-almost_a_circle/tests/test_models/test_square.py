@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# test_square.py
+
 
 """Defines unittests for models/square.py.
 Unittest classes:
@@ -14,9 +14,11 @@ Unittest classes:
     TestSquare_update_kwargs - line 538
     TestSquare_to_dictionary - 640
 """
+
 import io
 import sys
 import unittest
+
 from models.base import Base
 from models.square import Square
 
@@ -108,9 +110,9 @@ class TestSquare_size(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Square({"a": 1, "b": 2}, 2)
 
-    # def test_bool_size(self):
-    #     with self.assertRaisesRegex(TypeError, "width must be an integer"):
-    #         Square(True, 2, 3)
+    def test_bool_size(self):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            Square(True, 2, 3)
 
     def test_list_size(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
@@ -185,9 +187,9 @@ class TestSquare_x(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             Square(1, {"a": 1, "b": 2}, 2)
 
-    # def test_bool_x(self):
-    #     with self.assertRaisesRegex(TypeError, "x must be an integer"):
-    #         Square(1, True)
+    def test_bool_x(self):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            Square(1, True)
 
     def test_list_x(self):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):

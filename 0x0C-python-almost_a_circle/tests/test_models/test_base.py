@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# test_base.py
 
 """Defines unittests for base.py.
 Unittest classes:
@@ -12,8 +11,10 @@ Unittest classes:
     TestBase_save_to_file_csv - line 406
     TestBase_load_from_file_csv - line 484
 """
+
 import os
 import unittest
+
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
@@ -395,7 +396,7 @@ class TestBase_load_from_file(unittest.TestCase):
 
     def test_load_from_file_no_file(self):
         output = Square.load_from_file()
-        self.assertEqual('[]', output)
+        self.assertEqual([], output)
 
     def test_load_from_file_more_than_one_arg(self):
         with self.assertRaises(TypeError):
@@ -539,7 +540,7 @@ class TestBase_load_from_file_csv(unittest.TestCase):
 
     def test_load_from_file_csv_no_file(self):
         output = Square.load_from_file_csv()
-        self.assertEqual('[]', output)
+        self.assertEqual([], output)
 
     def test_load_from_file_csv_more_than_one_arg(self):
         with self.assertRaises(TypeError):

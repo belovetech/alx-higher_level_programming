@@ -497,7 +497,7 @@ class TestRectangle_stdout(unittest.TestCase):
         with self.assertRaises(TypeError):
             r.__str__(1)
 
-  # Test display method
+    # Test display method
     def test_display_width_height(self):
         r = Rectangle(2, 3, 0, 0, 0)
         capture = TestRectangle_stdout.capture_stdout(r, "display")

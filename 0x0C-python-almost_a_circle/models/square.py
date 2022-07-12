@@ -60,8 +60,9 @@ class Square(Rectangle):
         index = 0
         if args is not None and len(args) > 0:
             for arg in args:
-                setattr(self, attrs[index], arg)
-                index += 1
+                if index < 4:
+                    setattr(self, attrs[index], arg)
+                    index += 1
         elif kwargs is not None:
             for key, value in kwargs.items():
                 setattr(self, key, value)

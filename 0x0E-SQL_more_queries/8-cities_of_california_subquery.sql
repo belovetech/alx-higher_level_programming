@@ -5,6 +5,6 @@ FROM cities
 WHERE state_id = ( -- Query to get the California's id
 	SELECT id
 	FROM states
-	WHERE name = California
+	WHERE name = "California"
 )
 ORDER BY id;

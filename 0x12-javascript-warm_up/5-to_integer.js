@@ -2,5 +2,5 @@
 
 const argv = process.argv;
 console.log(
-  `${isNaN(argv[2]) ? 'My number' : `My number: ${Math.trunc(argv[2])}`} `
+  `${isNaN(argv[2]) ? 'Not a number' : `My number: ${Math.trunc(argv[2])}`} `
 );

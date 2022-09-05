@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-const argc = process.argv.length;
+const argCount = process.argv.length;
 
-if (argc < 3) console.log('No arguement');
-else if (argc === 3) console.log('Arguement found');
+if (argCount < 3) console.log('No arguement');
+else if (argCount === 3) console.log('Arguement found');
 else console.log('Arguements found');

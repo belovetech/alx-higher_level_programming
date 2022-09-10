@@ -16,9 +16,8 @@ if __name__ == '__main__':
                 WHERE states.name = %(name)s', {'name': sys.argv[4]})
 
     cities = cur.fetchall()
-
     citiesList = [item for city in cities for item in city]
-    print(" ".join(citiesList))
+    print(", ".join(citiesList))
 
     cur.close()
     db.close()

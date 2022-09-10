@@ -1,0 +1,128 @@
+Script started on 2022-09-10 15:46:50+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="62" LINES="39"]
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+  File "./8-model_state_fetch_first.py", line 18
+    from state in states:
+               ^
+SyntaxError: invalid syntax
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+  File "./8-model_state_fetch_first.py", line 19
+    if !state return
+       ^
+SyntaxError: invalid syntax
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+  File "./8-model_state_fetch_first.py", line 19
+    if not state return
+                 ^
+SyntaxError: invalid syntax
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+  File "./8-model_state_fetch_first.py", line 20
+    return
+    ^
+SyntaxError: 'return' outside function
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ [H[2J]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+  File "./8-model_state_fetch_first.py", line 20
+    return None
+    ^
+SyntaxError: 'return' outside function
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+Traceback (most recent call last):
+  File "./8-model_state_fetch_first.py", line 16, in <module>
+    states = session.query(States).one()
+NameError: name 'States' is not defined
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+Traceback (most recent call last):
+  File "./8-model_state_fetch_first.py", line 16, in <module>
+    states = session.query(State).one()
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/orm/query.py", line 2869, in one
+    return self._iter().one()
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/result.py", line 1476, in one
+    return self._only_one_row(
+  File "/usr/local/lib/python3.8/dist-packages/sqlalchemy/engine/result.py", line 614, in _only_one_row
+    raise exc.MultipleResultsFound(
+sqlalchemy.exc.MultipleResultsFound: Multiple rows were found when exactly one was required
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ [H[2J]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+Traceback (most recent call last):
+  File "./8-model_state_fetch_first.py", line 18, in <module>
+    for state in states:
+TypeError: 'State' object is not iterable
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+Traceback (most recent call last):
+  File "./8-model_state_fetch_first.py", line 18, in <module>
+    for state in states:
+TypeError: 'State' object is not iterable
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+Traceback (most recent call last):
+  File "./8-model_state_fetch_first.py", line 18, in <module>
+    if state is None:
+NameError: name 'state' is not defined
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+1: California
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+Traceback (most recent call last):
+  File "./8-model_state_fetch_first.py", line 21, in <module>
+    print('{}: {}'.format(state.id, state.name))
+AttributeError: 'list' object has no attribute 'id'
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ [H[2J]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+1: California
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ pycodestyle 8-model_state_fetch_first.py 
+8-model_state_fetch_first.py:11:17: E128 continuation line under-indented for visual indent
+8-model_state_fetch_first.py:11:80: E501 line too long (83 > 79 characters)
+8-model_state_fetch_first.py:12:1: W293 blank line contains whitespace
+8-model_state_fetch_first.py:15:1: W293 blank line contains whitespace
+8-model_state_fetch_first.py:17:1: W293 blank line contains whitespace
+8-model_state_fetch_first.py:22:1: W293 blank line contains whitespace
+8-model_state_fetch_first.py:22:1: W391 blank line at end of file
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ pycodestyle 8-model_state_fetch_first.py 
+8-model_state_fetch_first.py:11:17: E128 continuation line under-indented for visual indent
+8-model_state_fetch_first.py:11:80: E501 line too long (83 > 79 characters)
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ pycodestyle 8-model_state_fetch_first.py 
+8-model_state_fetch_first.py:11:25: E128 continuation line under-indented for visual indent
+8-model_state_fetch_first.py:11:80: E501 line too long (91 > 79 characters)
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ [H[2J]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ pycodestyle 8-model_state_fetch_first.py 
+8-model_state_fetch_first.py:11:25: E128 continuation line under-indented for visual indent
+8-model_state_fetch_first.py:11:72: W291 trailing whitespace
+8-model_state_fetch_first.py:12:26: E128 continuation line under-indented for visual indent
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ pycodestyle 8-model_state_fetch_first.py 
+8-model_state_fetch_first.py:11:75: W291 trailing whitespace
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ pycodestyle 8-model_state_fetch_first.py 
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ [H[2J]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ git add 8-model_state_fetch_first.py 
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ git commit -m " "Script that prints the first State object from the" database hbtn_0e_6_usa"
+[main 7d98058] Script that prints the first State object from the database hbtn_0e_6_usa
+ 1 file changed, 22 insertions(+)
+ create mode 100755 0x0F-python-object_relational_mapping/8-model_state_fetch_first.py
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ git push
+Enumerating objects: 6, done.
+Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 740 bytes | 246.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/belovetech/alx-higher_level_programming.git
+   1dc8e5a..7d98058  main -> main
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ 9-model_state_filter_a.py[H[2J]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ 9-model_state_filter_a.py
+9-model_state_filter_a.py: command not found
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ chmod 755 9-model_state_filter_a.py 
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./9-model_state_filter_a.py 
+Traceback (most recent call last):
+  File "./9-model_state_filter_a.py", line 11, in <module>
+    .format(sys.argv[1], sys.argv[2], sys.argv[3]),
+IndexError: list index out of range
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$  ./9-model_state_filter_a.py root root hbtn_0e_6_usa
+Traceback (most recent call last):
+  File "./9-model_state_filter_a.py", line 19, in <module>
+    for state in states:
+NameError: name 'states' is not defined
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./9-model_state_filter_a.py 
+Traceback (most recent call last):
+  File "./9-model_state_filter_a.py", line 11, in <module>
+    .format(sys.argv[1], sys.argv[2], sys.argv[3]),
+IndexError: list index out of range
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ ./9-model_state_filter_a.py [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchmod 755 9-mode[8@l_state_[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./9-model_state_[8P[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ./9-model_state_filter_a.py root root hbtn_0e_6_usa
+1: California
+2: Arizona
+3: Texas
+5: Nevada
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ [H[2J]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[00m$ git add .
+]0;belovedtech@DESKTOP-2AC5TF9: ~/alx-africa/alx-higher_level_programming/0x0F-python-object_relational_mapping[01;32mbelovedtech@DESKTOP-2AC5TF9[00m:[01;34m~/alx-africa/alx-higher_level_programming/0

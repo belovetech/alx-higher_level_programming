@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Script  that deletes all State objects
- with a name containing the letter 'a' from the database hbtn_0e_6_usa
+"""Script that display cities in state
 """
 
 import sys
@@ -12,7 +11,7 @@ from model_city import City
 
 if __name__ == '__main__':
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
-                           .format(sys.argv[1], sys.argv[2], sys.argv[3]))
+                           .format(sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
 
     Session = sessionmaker(bind=engine)
     session = Session()
@@ -22,4 +21,4 @@ if __name__ == '__main__':
                            .order_by(City.id).all()
 
     for state, city in states_cities:
-        print('{}: {} {}'. format(state.name, city.id, city.name))
+        print('{}: ({}) {}'. format(state.name, city.id, city.name))

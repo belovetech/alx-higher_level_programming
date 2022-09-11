@@ -16,7 +16,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).filter(State.name.ilike('%a%')).all()
+    states = session.query(State).filter(State.name.like('%a%')).all()
 
     [session.delete(state) for state in states]
     session.commit()

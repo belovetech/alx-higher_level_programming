@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Represents State class and an instance of declarative_base()
 """
-import sys
 from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship

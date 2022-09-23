@@ -10,6 +10,6 @@ import requests
 if __name__ == '__main__':
     bodyRes = requests.get(sys.argv[1])
     if bodyRes.status_code >= 400:
-        print('Status code: {}'.format(bodyRes.status_code))
+        print('Error code: {}'.format(bodyRes.status_code))
     else:
         print(bodyRes.text)

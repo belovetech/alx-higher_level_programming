@@ -6,6 +6,6 @@ import sys
 import requests
 
 if __name__ == '__main__':
-    data = {'email': sys.argv2}
+    data = {'email': sys.argv[2]}
     bodyRes = requests.post(sys.argv[1], data=data)
     print(bodyRes.text)

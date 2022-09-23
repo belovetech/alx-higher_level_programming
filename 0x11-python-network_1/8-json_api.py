@@ -8,22 +8,19 @@ import requests
 
 if __name__ == '__main__':
 
-    try:
-        data = {}
-        if sys.argv[1]:
-            data['q'] = sys.argv[1]
-        else:
-            data['q'] = ''
-    except IndexError as err:
-        pass
+    data = {}
+    if len(sys.argv) > 1:
+        data['q'] = sys.argv[1]
+    else:
+        data['q'] = ''
 
     res = requests.post('http://0.0.0.0:5000/search_user', data=data)
 
     try:
         resJSON = res.json()
-        if not resJSON:
-            print('No result')
-        else:
+        if resJSON:
             print('{[]} {}'.format(resJSON.get('id'), resJSON.get('name')))
-    except requests.exceptions.JSONDecodeError as err:
+        else:
+            print('No result')
+    except Exception:
         print('Not a valid JSON')

@@ -12,5 +12,5 @@ if __name__ == '__main__':
     url = 'https://api.github.com/user'
 
     res = requests.post(url, auth=auth)
-    res = res.json()
-    print(res.get('id'))
+    res_json = res.json()
+    print(res_json.get('id'))

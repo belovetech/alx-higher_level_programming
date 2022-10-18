@@ -9,7 +9,6 @@ request(process.argv[2], (err, res, body) => {
   const data = {};
 
   todos.forEach((todo) => {
-    console.log(data[todo.userId]);
     if (todo.completed && data[todo.userId] === undefined) {
       data[todo.userId] = 1;
     } else if (todo.completed) {

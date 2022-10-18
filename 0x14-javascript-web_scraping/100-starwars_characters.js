@@ -7,11 +7,10 @@ request(url, (err, res, body) => {
   if (err) console.log(err);
 
   const characters = JSON.parse(body).characters;
-
   characters.forEach((cur) => {
     request(cur, (err, res, body) => {
-      const name = JSON.parse(body).name;
-      console.log(name);
+      if (err) console.log(err);
+      console.log(JSON.parse(body).name);
     });
   });
 });

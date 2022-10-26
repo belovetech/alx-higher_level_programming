@@ -1,5 +1,3 @@
-$(function () {
-  $('DIV#red_header').on('click', () => {
-    $('header').css('color', 'red');
-  });
+$('DIV#red_header').on('click', () => {
+  $('header').css('color', 'red');
 });
